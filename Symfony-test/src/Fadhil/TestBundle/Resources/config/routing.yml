@@ -1,0 +1,11 @@
+fadhil_test_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: FadhilTestBundle:Default:index }
+
+fadhil_test_random:
+    path:     /hello/random/{number}
+    defaults: {_controller: FadhilTestBundle:Default:random }
+
+fadhil_test_add_todo:
+    path:     /todo/addnew
+    defaults: {_controller: FadhilTestBundle:Default:form}

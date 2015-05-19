@@ -1,3 +1,7 @@
+fadhil_test:
+    resource: "@FadhilTestBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation

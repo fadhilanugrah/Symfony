@@ -1,0 +1,17 @@
+Fadhil\TestBundle\Entity\Todo\Notes:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        notes:
+            type: string
+            length: '255'
+            column: Notes
+        done:
+            type: boolean
+    lifecycleCallbacks: {  }
