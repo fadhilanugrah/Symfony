@@ -62,7 +62,12 @@ class DefaultController extends Controller
     	));
     }
 
-    public function doneNotesAction($id)
+    /*
+	* @Route("/todo/done/{id}")
+    */
+
+
+    public function doneNotesAction(Request $request, $id)
     {
     	# code...
     	$em = $this->getDoctrine()->getManager();

@@ -2,7 +2,7 @@
 {% for note in notes %}
 	<p>{{note.notes}}</p>
 	{% if note.done == 0 %}
-		<a href='#'>is it done?</a>
+		<a href='{{url('fadhil_test_done_todo', {'id': note.id})}}'>is it done?</a>
 	{% elseif note.done == 1 %}
 		<p>It's Done</p>
 	{% endif %}

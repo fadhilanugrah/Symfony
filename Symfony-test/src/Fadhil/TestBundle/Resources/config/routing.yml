@@ -6,14 +6,15 @@ fadhil_test_random:
     path:     /hello/random/{number}
     defaults: {_controller: FadhilTestBundle:Default:random }
 
-fadhil_test_add_todo:
-    path:     /todo/addnew
-    defaults: {_controller: FadhilTestBundle:Default:form}
-
 fadhil_test_all_todo:
     path:     /todo
     defaults: {_controller: FadhilTestBundle:Default:allNotes }
 
-fadhil_test_all_todo:
+fadhil_test_add_todo:
+    path:     /todo/addnew
+    defaults: {_controller: FadhilTestBundle:Default:form}
+
+
+fadhil_test_done_todo:
     path:     /todo/done/{id}
     defaults: {_controller: FadhilTestBundle:Default:doneNotes }
