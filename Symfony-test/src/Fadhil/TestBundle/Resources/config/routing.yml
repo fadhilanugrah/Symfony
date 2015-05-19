@@ -9,3 +9,11 @@ fadhil_test_random:
 fadhil_test_add_todo:
     path:     /todo/addnew
     defaults: {_controller: FadhilTestBundle:Default:form}
+
+fadhil_test_all_todo:
+    path:     /todo
+    defaults: {_controller: FadhilTestBundle:Default:allNotes }
+
+fadhil_test_all_todo:
+    path:     /todo/done/{id}
+    defaults: {_controller: FadhilTestBundle:Default:doneNotes }
